@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="65dp"
+               android:orientation="horizontal"
+               android:background="@drawable/view_design">
+               <ImageView
+                   android:id="@+id/return_btn"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+
+                   android:src="@drawable/return_arrow"
+                   android:layout_marginLeft="15dp"/>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="View patient"
+                   android:layout_marginLeft="18dp"
+                   android:textSize="20sp"
+
+                   android:textColor="@color/blue"
+                   android:layout_gravity="center"/>
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   >
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="20dp"
+                       >
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="S.Meena,"
+                           android:textSize="18sp"
+                           android:layout_marginLeft="15dp"
+
+
+                           android:textColor="@color/blue"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="5dp"
+                           android:text="F/23"
+                           android:textSize="18sp"
+                           android:textColor="@color/blue"/>
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="2dp">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Patient ID :"
+                           android:layout_marginLeft="15dp"
+                           android:textColor="@color/blue"
+                           android:textSize="15sp" />
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="87 20200727153457"
+                           android:textColor="@color/blue"/>
+                   </LinearLayout>
+               </LinearLayout>
+               <ImageButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/person"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="10dp"
+                   android:padding="2dp"
+                   android:background="@drawable/profile_shape"
+                   android:layout_marginLeft="70dp"
+                  />
+           </LinearLayout>
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="160dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:background="@drawable/goal_reach_design"
+               android:layout_marginTop="20dp">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Goal Reached"
+                   android:textColor="@color/white"
+                   android:textStyle="bold"
+                   android:layout_marginTop="7dp"
+                   android:textSize="17sp"
+                   android:layout_marginLeft="100dp"/>
+               <RelativeLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="30dp"
+                   android:padding="2dp"
+                   android:layout_marginTop="50dp"
+                   android:layout_marginBottom="25dp"
+                   >
+                   <com.example.healthapp.SemiCircleProgressBar
+                       android:id="@+id/semiCircleProgressBar"
+                       android:layout_width="165dp"
+                       android:layout_height="100dp" />
+
+
+               </RelativeLayout>
+               <RelativeLayout
+                   android:layout_width="70dp"
+                   android:layout_height="30dp"
+                   android:background="@drawable/design_styel"
+                   android:layout_marginLeft="220dp"
+                   android:layout_marginTop="60dp"
+                   >
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text=" EMG"
+                       android:textSize="12sp"
+                       android:textColor="@color/black"
+                       />
+
+               </RelativeLayout>
+               <RelativeLayout
+                   android:layout_width="70dp"
+                   android:layout_height="30dp"
+                   android:background="@drawable/design_styel"
+                   android:layout_marginLeft="220dp"
+                   android:layout_marginTop="95dp">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text=" ROM"
+                       android:textSize="12sp"
+                       android:textColor="@color/black"
+                       />
+
+               </RelativeLayout>
+
+           </RelativeLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+
+
+              >
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginLeft="17dp">
+                   <TextView
+                       android:layout_width="75dp"
+                       android:layout_height="wrap_content"
+                       android:text="Phone no."
+                       android:textSize="13sp"
+                       android:textColor="@color/deep_grey"
+                       />
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/baseline_call_24"
+                       android:layout_marginLeft="60dp"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="802233445"
+                       android:textSize="14sp"
+                       android:layout_marginLeft="3dp"
+                       android:textColor="@color/black"
+                       />
+               </LinearLayout>
+               <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+                   android:layout_marginLeft="17dp">
+               <TextView
+                   android:layout_width="75dp"
+                   android:layout_height="wrap_content"
+                   android:text="Mail ID"
+                   android:textColor="@color/deep_grey"
+                   android:textSize="12sp"
+                   />
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/baseline_email_24"
+                   android:layout_marginLeft="60dp"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="meenarabinsachin2@gmial.com"
+                   android:textSize="12sp"
+                   android:layout_marginLeft="3dp"
+                   android:textColor="@color/black"
+                  />
+           </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="5dp"
+                   android:layout_marginLeft="17dp">
+                   <TextView
+                       android:layout_width="75dp"
+                       android:layout_height="wrap_content"
+                       android:text="Affected side"
+                       android:textSize="12sp"
+                       android:textColor="@color/deep_grey"
+                       />
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/billateral"
+                       android:layout_marginLeft="60dp"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Billateral"
+                       android:textSize="14sp"
+                       android:layout_marginLeft="3dp"
+                       android:textColor="@color/black"
+                       />
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="5dp"
+                   android:layout_marginLeft="17dp">
+                   <TextView
+                       android:layout_width="75dp"
+                       android:layout_height="wrap_content"
+                       android:text="Condition"
+                       android:textSize="12sp"
+                       android:textColor="@color/deep_grey"
+                       />
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/ortho"
+                       android:layout_marginLeft="60dp"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="ortho"
+                       android:textSize="14sp"
+                       android:layout_marginLeft="3dp"
+                       android:textColor="@color/black"
+                     />
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="5dp"
+                   android:layout_marginLeft="17dp">
+                   <TextView
+                       android:layout_width="75dp"
+                       android:layout_height="wrap_content"
+                       android:text="Speciality"
+                       android:textSize="12sp"
+                       android:textColor="@color/deep_grey"
+                       />
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/medical"
+                       android:layout_marginLeft="60dp"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Osteoarthritis"
+                       android:textSize="14sp"
+                       android:layout_marginLeft="3dp"
+                       android:textColor="@color/black"
+                     />
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="3dp"
+                   android:layout_marginTop="5dp"
+                   android:background="@drawable/view_design"/>
+
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@drawable/view_design"
+               android:paddingBottom="20dp"
+               android:paddingTop="15dp">
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/baseline_insert_drive_file_24"
+                   android:layout_marginLeft="15dp"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Medical history"
+                   android:textStyle="bold"
+                   android:textColor="@color/blue"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Hypertension, DM,Hypothyrodism"
+                   android:textSize="12sp"
+                   android:layout_marginLeft="30dp"/>
+           </LinearLayout>
+
+
+
+
+
+       </LinearLayout>
+
+
+   </ScrollView>
+
+</LinearLayout>
